@@ -10,10 +10,10 @@ This project is a simple **HTTP/1.0 proxy server** implemented in Python. It han
 - Proper error handling with HTTP status codes (400, 502, 503).
 
 ## Requirements
-- Python 3.x
+- Python 3.x or above.
 - Unix-based system (for `fork()` support)
 
-## How to Run
+## How to Run on Linux 
 
 1. Clone this repository:
     ```bash
@@ -22,23 +22,21 @@ This project is a simple **HTTP/1.0 proxy server** implemented in Python. It han
     ```
 
 2. Run the proxy server:
-    ### bash
+    ```bash
     python http_proxy.py <port>
-
+    ```
     Example:
-    ### bash
+    ```bash
     python http_proxy.py 8080
+    ```
 
+### outputs attached for reference
 
 3. Configure your browser or tool to use `localhost:<port>` as the HTTP proxy.
 
 ## Project Structure
 - `http_proxy.py` : Main proxy server code.
 
-## Notes
+## Key Notes
 - Only handles **HTTP**, not HTTPS.
 - Tested on Linux environments.
-
-## License
-This project is licensed under the MIT License.
-
